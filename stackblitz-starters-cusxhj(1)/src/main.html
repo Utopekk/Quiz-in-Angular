@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="bg-primary" role="navigation">
+      <div class="center">
+        <h1 class="klasa1">UTOPEK</h1>
+        <div class="group1">
+          <button (click)="zaladujArtykul(1)" class="text-button">
+            Artykuł
+          </button>
+          <a class="klasa2" href="https://github.com/Utopekk">Github</a>
+          <button (click)="zaladujPytanie(1)" class="text-button">Quiz</button>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="middle" *ngIf="!quiz">
+      <p class="tekst">
+        Witaj na stronie internetowej poświęconej jednej z najbardziej
+        ikonicznych drużyn w historii koszykówki - Chicago Bulls. Od momentu
+        swojego założenia w 1966 roku Bulls przekształcili się nie tylko w
+        potęgę ligi NBA, ale także w globalną markę, symbolizującą determinację,
+        pasję i nieustępliwość. Zespół ten, znany z niezapomnianych triumfów,
+        legendarnych graczy i zaciętych pojedynków, pozostaje nieodłączną
+        częścią historii koszykówki. Przez lata Bulls wyznaczyli nowe standardy
+        w sporcie, inspirując fanów na całym świecie. Zapraszamy Cię do
+        zgłębienia historii, sukcesów i dziedzictwa Chicago Bulls na naszej
+        platformie, gdzie odkryjesz fascynujące fakty, wspomnienia oraz aktualne
+        informacje dotyczące tego niezwykłego zespołu.
+      </p>
+      <img
+        src="https://s3.tvp.pl/images2/3/f/6/uid_3f6f6801b181c0b077dede5baf153e2b1590577534910_width_1200_play_0_pos_0_gs_0_height_678_michael-jordan-scottie-pippen-i-denis-rodman-najwieksze-gwiazdy-chicago-bulls-fot-getty.png"
+      />
+    </div>
+  </body>
+</html>
+
+<div *ngIf="quiz">
+  <app-quiz
+    [pytanie]="biezacePytanie"
+    (odpowiedziano)="doliczWynik($event)"
+  ></app-quiz>
+  <br />
+  <p class="class=" group11>Wynik: {{ wynik }} / 7</p>
+</div>

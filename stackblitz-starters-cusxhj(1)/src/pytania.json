@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Kiedy Bulls wygraliy mistrzostwo po raz pierwszy?",
+    "text": ["1991", "2000", "1994"],
+    "index": 0
+  },
+  {
+    "id": 2,
+    "title": "2. Kto jest najlepszym graczem w historii klubu?",
+    "text": ["Steve Kerr", "Derrick Rose", "Micheal Jordan"],
+    "index": 2
+  },
+  {
+    "id": 3,
+    "title": "3.Ile mistrzostw wygrało bulls?",
+    "text": ["2", "10", "6"],
+    "index": 2
+  },
+  {
+    "id": 4,
+    "title": "4.Kto z tych graczy miał najwięcej zbiórek na gre?",
+    "text": ["Dennis Rodman", "Scottie Pippen", "Micheal Jordan"],
+    "index": 0
+  },
+  {
+    "id": 5,
+    "title": "5. Ile lat miał najmlodszy MVP ligi",
+    "text": ["20", "21", "22"],
+    "index": 2
+  },
+  {
+    "id": 6,
+    "title": "6. Który z tych graczy nigdy nie grał w Bulls",
+    "text": ["Shaq", "Jimmy Butler", "joakim noah"],
+    "index": 0
+  },
+  {
+    "id": 7,
+    "title": "7. Z jaką drużyną bulls wygrało w 1988 finały NBA",
+    "text": ["Utah Jazz", "Los Angeles Lakers", "Boston Celtics"],
+    "index": 0
+  }
+]

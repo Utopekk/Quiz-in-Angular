@@ -1,0 +1,18 @@
+<div class="group11">
+  <p class="Tytul">{{ pytanie.q }}</p>
+  <div
+    class="pytania"
+    *ngFor="let option of pytanie.ans; let i = index"
+    [class.selected]="pytanie.selectedOptions[i]"
+    (click)="odp(i)"
+  >
+    <p>{{ option }}</p>
+  </div>
+  <button
+    (click)="potwierdzOdpowiedzi()"
+    class="text-button confirm-button"
+    [disabled]="!wybranoOdpowiedz"
+  >
+    Potwierdź wybór
+  </button>
+</div>
