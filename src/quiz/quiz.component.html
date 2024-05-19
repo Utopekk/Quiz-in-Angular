@@ -1,0 +1,31 @@
+<div class="container">
+  <p class="Tytul">{{ pytanie.q }}</p>
+  <div
+    class="pytania"
+    *ngFor="let option of pytanie.ans; let i = index"
+    [ngClass]="{
+      correct: i === pytanie.index && pytanie.selectedOptions[i],
+      wrong: i !== pytanie.index && pytanie.selectedOptions[i]
+    }"
+    (click)="odp(i)"
+  >
+    <p>{{ option }}</p>
+  </div>
+  <button
+    (click)="potwierdzOdpowiedzi()"
+    class="btn btn-primary guzik"
+    [disabled]="!wybranoOdpowiedz"
+  >
+    Kolejne pytanie
+  </button>
+  <img
+    class="zdj"
+    *ngIf="isCorrectSelected && isAnswerLocked"
+    [src]="correctImageUrl"
+  />
+  <img
+    class="zdj"
+    *ngIf="!isCorrectSelected && isAnswerLocked"
+    [src]="errorImageUrl"
+  />
+</div>

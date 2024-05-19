@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div nclass="container">
+      <nav class="navbar-expand-lg primary" role="navigation">
+        <div class="d-flex align-items-center">
+          <button (click)="Pop()" class="styled-button">UTOPEK</button>
+          <div class="row group1">
+            <button
+              (click)="showArticle(1)"
+              class="col-12 col-sm-2 text-button"
+            >
+              Mistrzostwa
+            </button>
+            <button
+              (click)="showArticle(2)"
+              class="col-12 col-sm-2 text-button"
+            >
+              Zawodnicy
+            </button>
+            <button
+              (click)="showArticle(3)"
+              class="col-12 col-sm-2 text-button"
+            >
+              Koniec
+            </button>
+            <button
+              (click)="zaladujPytanie(1)"
+              class="col-12 col-sm-2 text-button1"
+            >
+              Quiz
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div *ngIf="!showingArticle">
+        <div class="middle" *ngIf="!quiz">
+          <p class="tekst">{{tekst}}</p>
+          <img
+            src="https://s3.tvp.pl/images2/3/f/6/uid_3f6f6801b181c0b077dede5baf153e2b1590577534910_width_1200_play_0_pos_0_gs_0_height_678_michael-jordan-scottie-pippen-i-denis-rodman-najwieksze-gwiazdy-chicago-bulls-fot-getty.png"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<div *ngIf="!quiz">
+  <div *ngIf="showingArticle">
+    <div class="container">
+      <div class="artykul">
+        <p class="Title">{{title}}</p>
+        <div class="kaka">
+          <p>{{text}}</p>
+          <img class="zdje" [src]="zdj" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="!showingArticle">
+  <div *ngIf="quiz" class="container">
+    <app-quiz
+      [pytanie]="biezacePytanie"
+      (odpowiedziano)="doliczWynik($event)"
+    ></app-quiz>
+
+    <br />
+    <p class="group11">Wynik: {{ wynik }} / 7</p>
+  </div>
+</div>

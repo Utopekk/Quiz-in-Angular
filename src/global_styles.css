@@ -1,0 +1,139 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.c1 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.kot {
+  padding-top: 100px;
+}
+
+.klasa2 {
+  margin-left: 30px;
+  line-height: 1.45;
+}
+
+.primary {
+  background-color: #0a1922;
+  font-family: helvetica, arial, sans-serif;
+  width: 100%;
+  position: static;
+  padding: 15px;
+}
+
+.group1 {
+  color: #aaa;
+  display: flex;
+  align-items: center;
+}
+
+.text-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  margin-left: 35px;
+  line-height: 1.45;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+.text-button1 {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  margin-left: 35px;
+  line-height: 1.45;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.middle {
+  border: 3px #0a1922 solid;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 12px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 12px 18px 36px -18px;
+  border-radius: 5px;
+}
+
+.tekst {
+  padding: 15px;
+  text-align: justify;
+  font-family: muli, avenir, helvetica neue, helvetica, arial, sans-serif;
+  line-height: 1.5;
+}
+
+.group11 {
+  margin-left: 2%;
+  font-size: large;
+  border: 2px #0a1922 solid;
+  border-radius: 6px;
+  margin-right: 74%;
+  padding: 2%;
+}
+
+.container {
+  width: 100%;
+}
+
+.artykul {
+  padding: 40px;
+  font-family: muli, avenir, helvetica neue, helvetica, arial, sans-serif;
+  font-size: 1.25em;
+}
+
+.Title {
+  color: #0a1922;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.styled-button {
+  font-size: 2em;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+  margin-right: auto;
+  margin-left: 15px;
+  color: white;
+}
+
+.kaka {
+  text-align: justify;
+  border: 3px solid #0a1922;
+  box-shadow: rgba(50, 50, 93, 0.25) 12px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 12px 18px 36px -18px;
+  padding: 15px;
+  border-image-slice: 1;
+  border-radius: 5px;
+}
+.banner {
+  width: 100px;
+  height: 800px;
+  float: left;
+}
+.zdje {
+  width: 55%;
+  height: 20%;
+  margin: 20px auto;
+  display: flex;
+  justify-items: center;
+}
